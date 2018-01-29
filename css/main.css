@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+.background{
+  /*background: -webkit-radial-gradient(#0d136b,#151850,#07092f);*/
+  background-image: url(../assets/images/yellow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  background-position: center;
+}
+/* botón de barras */
+.btn-bars{
+  background: transparent;
+  color: white;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  font-size: 2em;
+  text-shadow: 3px 3px 3px #03221d;
+}
+
+/* animación de estrellas */
+.star{
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+}
+.star1{
+  top: 20%;
+  left: 50%;
+}
+.star2{
+  top: 30%;
+  left: 30%;
+}
+.star3{
+  top: 90%;
+  left: 90%;
+}
+.star4{
+  top: 80%;
+  left: 20%;
+}
+.star5{
+  top: 30%;
+  left: 80%;
+}
+.star6{
+  top: 70%;
+  left: 80%;
+}
+.star7{
+  top: 80%;
+  left: 50%;
+}
+.star8{
+  top: 35%;
+  left: 10%;
+}
+.star9{
+  top: 60%;
+  left: 20%;
+}
+.star10{
+  top: 25%;
+  left: 75%;
+}
+.star:nth-child(2n){
+  -webkit-animation: star-pair 2s infinite;
+}
+@-webkit-keyframes star-pair {
+  0%, 50% {
+      box-shadow: 0 0 3px 8px rgba(255,255,255,.3);
+  }
+  80%{
+      box-shadow: 0 0 3px 16px rgba(255,255,255,.3);
+  }
+}
+.star:nth-child(2n + 1){
+  -webkit-animation: star-odd 2s infinite;
+}
+@-webkit-keyframes star-odd{
+  0%, 35%, 50% {
+      box-shadow: 0 0 3px 8px rgba(255,255,255,.3);
+  }
+  45%{
+      box-shadow: 0 0 3px 16px rgba(255,255,255,.3);
+  }
+}
+/* centrando texto dentro del header */
+.div-header, .div-header-about{
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  top:-15vh;
+  left:0;
+  right:0;
+  bottom:0;
+  position: absolute;
+  margin: auto;
+}
+.text-white{
+  color: #fff;
+}
+.text-header{
+  font-family: 'Righteous', cursive;
+  font-size: 3em;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 3px #03221d;
+}
+.text-p{
+  font-family: 'Cabin', sans-serif;
+  text-shadow: 1px 1px 1px #03221d;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* dibujando personaje *//*
+.body{
+  width: 30vh;
+  height: 20vh;*/
+  /*background:linear-gradient(#5c380e,#943205);*/
+  /*background-image: url(../assets/images/forest.jpg);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+}
+.eye{
+  background: #000;
+  border-radius: 50%;
+  width: 2vh;
+  height: 2vh;
+  position: relative;
+}
+.eye-container{
+  width: 15vh;
+  height: 2vh;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+}
+.eye1{
+  margin-right: 10vh;
+}
+.smile{
+  width: 10vh;
+  height: 5vh;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: linear-gradient( #000 20%, #c31727 80%);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}*/
+
+/* ícono de scroll */
+.scroll-down{
+  margin: auto;
+  width: 5vh;
+  bottom: 0;
+}
+.icon-scroll{
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  bottom: 0;
+  position: absolute;
+}
+/* sección acerca de mí*/
+.about{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+.text-header-about{
+  font-family: 'Grand Hotel', cursive;
+  font-size: 3em;
+  margin-bottom: 0.5rem;
+  color: rgb(255, 94, 20);
+  margin-top: -20vh;
+  text-shadow: 1px 1px #000;
+}
+.dragonfly{
+  width: 6vh;
+  height: 6vh;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.text-p-about{
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.3em;
+  width: 80%;
+  margin: auto;
+}
