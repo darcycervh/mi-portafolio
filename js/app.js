@@ -6,12 +6,12 @@ $(document).ready(function() {
   $(document).scroll(function() {
     var scrollTop = $(this).scrollTop();
     var pixels = scrollTop / 70;
-    if(scrollTop < height){
+    if (scrollTop < height) {
       $('#forest-background').css({
-        '-webkit-filter':'blur(' + pixels + 'px)',
-        'background-position':'center -' + pixels *10+'px'
+        '-webkit-filter': 'blur(' + pixels + 'px)',
+        'background-position': 'center -' + pixels * 10 + 'px'
       });
       $('div-header').fadeOut();
     }
-  })
+  });
 });

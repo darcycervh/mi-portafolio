@@ -213,3 +213,37 @@
   width: 80%;
   margin: auto;
 }
+/* sección acerca de mis habilidades */
+.habilities{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/leaf.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .div-header-habilities{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3em;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 94, 20);
+    text-shadow: 1px 1px #000;
+  }
+  .text-header-habilities{
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .list-habilities{
+      width: 90%;
+      height: 50vh;
+      margin: auto;
+  }
+  .habilities-bubbles{
+      width: 17vh;
+      height: 17vh;
+      background: rgba(255,255,255,.8);
+      border-radius: 50%;
+      float: left;
+      margin: 1vh;
+      align-items: center;
+  }
